@@ -6,40 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_weight="6"
-       android:orientation="vertical">
-       <ListView
-           android:id="@+id/list1"
-           android:background="#FFEC7A"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"/>
-   </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-        <Button
-            android:id="@+id/btn_start"
-            android:text="@string/btn_start"
-            android:layout_marginRight="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:id="@+id/btn_stop"
-            android:text="@string/btn_stop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/list1"
+            android:background="#F8F67E"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </LinearLayout>
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn_start"/>
+        <Button
+            android:id="@+id/btn_curs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일시정지"/>
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_stop"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
         <TextView
             android:id="@+id/text_music"
             android:layout_width="wrap_content"
@@ -49,8 +54,8 @@
         <ProgressBar
             android:id="@+id/progress"
             android:layout_width="wrap_content"
-            android:visibility="invisible"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
     </LinearLayout>
 
 </LinearLayout>
